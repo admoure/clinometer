@@ -1,0 +1,5 @@
+Xmax=200
+Xmin=100
+Ymax=275
+Ymin=175
+Tdia=20

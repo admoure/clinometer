@@ -1,0 +1,2 @@
+/media/CAM/datalogger/inclinometro/encurso/140130.txt
+/media/CAM/datalogger/inclinometro/encursoc/c140130.txt

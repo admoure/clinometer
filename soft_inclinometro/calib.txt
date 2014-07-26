@@ -1,0 +1,20 @@
+#FICHERO QUE ALMACENA LAS CURVAS DE CALIBRACION
+
+*CALIBRACION*
+vout1=0.1561*vin +1.25053
+vout2=0.15669*vin +1.2505
+vout3=1*vin +0.4
+y1l=-3e-17*x5 -1e-13*x4 +3e-9*x3 +9e-6*x2 +0.9595*x -108.26
+y2l=-3e-17*x5 -3e-14*x4 +2e-9*x3 +5e-6*x2 +0.9774*x -80.34
+y1h=-4e-19*x5 -2e-15*x4 +7e-11*x3 +5e-7*x2 +0.1002*x -11.0563
+y2h=+1e-21*x5 +1e-14*x4 -3e-12*x3 -5e-7*x2 +0.1036*x -6.9825
+
+
+
+
+
+
+
+
+
+

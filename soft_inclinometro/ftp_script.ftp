@@ -1,0 +1,7 @@
+debug -o debug.txt
+open 65.254.250.102
+user admoure "&admoure11"
+cd gravimetro2
+put /media/CAM/datalogger/gravimetro//encurso/140101.txt
+put /media/CAM/datalogger/gravimetro//encurso/140122.txt
+bye

@@ -1,0 +1,108 @@
+---- Resolviendo dirección del servidor...
+---- 1 address found: 65.254.250.102
+---- Conectándose a 65.254.250.102 (65.254.250.102) port 21
+<--- 220-
+<--- 220 Powweb FTP Server ready
+---> FEAT
+<--- 211-Features:
+<---  MDTM
+<---  MFMT
+<---  TVFS
+<---  MFF modify;UNIX.group;UNIX.mode;
+<---  MLST modify*;perm*;size*;type*;unique*;UNIX.group*;UNIX.mode*;UNIX.owner*;
+<---  SITE MKDIR
+<---  SITE RMDIR
+<---  SITE UTIME
+<---  SITE SYMLINK
+<---  REST STREAM
+<---  SIZE
+<--- 211 End
+---> OPTS MLST modify;perm;size;type;UNIX.group;UNIX.mode;UNIX.owner;
+<--- 200 OPTS MLST modify;perm;size;type;UNIX.group;UNIX.mode;UNIX.owner;
+---> USER admoure
+<--- 331 Password required for admoure
+---> PASS &admoure11
+<--- 230 User admoure logged in
+---> PWD
+<--- 257 "/" is the current directory
+---- CWD path to be sent is `/gravimetro2'
+---> CWD /gravimetro2
+<--- 250 CWD command successful
+---> TYPE I
+<--- 200 Type set to I
+---> PASV
+<--- 227 Entering Passive Mode (65,254,250,102,87,147)
+---- Conectando socket de datos a (65.254.250.102) puerto 22419
+---- Data connection established
+---> ALLO 6032
+<--- 200 ALLO command successful
+---> STOR 140121.txt
+<--- 150 Opening BINARY mode data connection for 140121.txt
+---- Cerrando socket de datos
+<--- 226 Transfer complete
+---> MFMT 20140121184933 140121.txt
+<--- 213 Modify=20140121184933; 140121.txt
+---> QUIT
+---- Cerrando socket de control
+l
+65,254,250,102,187,133)
+---- Conectando socket de datos a (65.254.250.102) puerto 48005
+---- Data connection established
+---> ALLO 34086
+<--- 200 ALLO command successful
+---> STOR 131213.txt
+<--- 150 Opening BINARY mode data connection for 131213.txt
+---- Cerrando socket de datos
+<--- 226 Transfer complete
+---> MFMT 20131219191852 131213.txt
+<--- 213 Modify=20131219191852; 131213.txt
+---> PASV
+<--- 227 Entering Passive Mode (65,254,250,102,23,223)
+---- Conectando socket de datos a (65.254.250.102) puerto 6111
+---- Data connection established
+---> ALLO 74880
+<--- 200 ALLO command successful
+---> STOR 131214.txt
+<--- 150 Opening BINARY mode data connection for 131214.txt
+---- Cerrando socket de datos
+<--- 226 Transfer complete
+---> MFMT 20131219191852 131214.txt
+<--- 213 Modify=20131219191852; 131214.txt
+---> PASV
+<--- 227 Entering Passive Mode (65,254,250,102,217,135)
+---- Conectando socket de datos a (65.254.250.102) puerto 55687
+---- Data connection established
+---> ALLO 74880
+<--- 200 ALLO command successful
+---> STOR 131215.txt
+<--- 150 Opening BINARY mode data connection for 131215.txt
+---- Cerrando socket de datos
+<--- 226 Transfer complete
+---> MFMT 20131219191852 131215.txt
+<--- 213 Modify=20131219191852; 131215.txt
+---> PASV
+<--- 227 Entering Passive Mode (65,254,250,102,145,31)
+---- Conectando socket de datos a (65.254.250.102) puerto 37151
+---- Data connection established
+---> ALLO 74854
+<--- 200 ALLO command successful
+---> STOR 131216.txt
+<--- 150 Opening BINARY mode data connection for 131216.txt
+---- Cerrando socket de datos
+<--- 226 Transfer complete
+---> MFMT 20131219191852 131216.txt
+<--- 213 Modify=20131219191852; 131216.txt
+---> PASV
+<--- 227 Entering Passive Mode (65,254,250,102,202,211)
+---- Conectando socket de datos a (65.254.250.102) puerto 51923
+---- Data connection established
+---> ALLO 34112
+<--- 200 ALLO command successful
+---> STOR 131217.txt
+<--- 150 Opening BINARY mode data connection for 131217.txt
+---- Cerrando socket de datos
+<--- 226 Transfer complete
+---> MFMT 20131219191852 131217.txt
+<--- 213 Modify=20131219191852; 131217.txt
+---> QUIT
+---- Cerrando socket de control

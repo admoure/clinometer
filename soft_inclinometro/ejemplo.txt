@@ -1,0 +1,28 @@
+NOMBRE DE LA ESTACION > ITUTA
+CANAL 1 > ON
+CANAL 2 > ON
+CANAL 3 > ON
+muestreo > 2
+
+*CALIBRACION*
+
+CANAL 1 A = 0.156100  B = 1.250530
+CANAL 2 A = 0.156690  B = 1.250500
+CANAL 3 A = 1.000000  B = 0.400000
+-0.000000 -0.000000 0.000000 0.000009 0.959500 -108.260002
+-0.000000 -0.000000 0.000000 0.000005 0.977400 -80.339996
+
+cuentas a voltaje canal1 -> 1.250477
+voltaje salida sensor canal1 -> -0.340598 mv
+RAD_CANAL_1 -> -108.586807 urad
+
+cuentas a voltaje canal2 -> 1.243343
+voltaje salida sensor canal2 -> -45.674450 mv
+RAD_CANAL_2 -> -124.971970 urad
+
+cuentas a voltaje canal3 -> 0.614710
+voltaje salida sensor canal3 -> 214.709671 mv
+TEMP_CANAL3 -> 21.4710 ºC
+
+echo "14 02 01  17 12 55  32780  32593  16114" >> /media/CAM/datalogger/inclinometro/original/140201.txt
+echo "14 02 01  17 12 55  -108.59  -124.97  21.47" >> /media/CAM/datalogger/inclinometro/original/c140201.txt

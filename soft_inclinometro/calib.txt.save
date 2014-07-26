@@ -1,0 +1,49 @@
+#Archivo de calibracion para una entrada entre 0.4 y 2 voltios.
+#El previo resta 0.4 voltios a la senial de entrada dejando un rango de 0 a 1.6 voltios que es el voltaje que entra al CAD finalmente.
+#En lugar de sumar 0.4 voltios a la nial registrada con el CAD se utiliza una recta de calibracion que es mas exacta
+
+
+#Para el previo que simplemente resta 0.4 y filtra (resistencia de 100 ohms)
+#Vout = Vin*(0.99963) - 0.40038   Previo
+#Para el previo que simplemente resta 0.48 y filtra (resistencia de 120 ohms)
+#Vout = Vin*(1) - 0.48
+
+#Para la conversion de voltios a mm donde 4mA -> 5212 y 20mA -> 712
+#Altura(mm) = 6337 - 281.25Iin
+#En voltaje y dependiendo de R
+#mm = 5212 - ((4500*Vin - 18000R)/16R)  Vin debe estar en mv
+#con 100 ohms
+#mm = -2.8125Vin + 6337
+#con 120 ohms
+#mm = -2.34375Vin + 6337
+
+#Para la conversion de voltios a mm donde 4mA -> 712 y 20mA -> 5212
+#Altura(mm) = 281.25Iin - 413
+#En voltaje y dependiendo de R
+#mm = 712 + (4500*Vin-18000R)/16R    Vin debe estar en mV
+#con 100 ohms
+#mm = 2.8125Vin - 413
+#con 120 ohms
+#mm = 2.34375Vin - 413
+
+altura=2.8125*vin -413
+y1=-3E-17x5 -3E-14x4 +2E-9x3 +5E-6x2 +0.9774x -80.34
+
+*CALIBRACION*
+vout1=0.1561*vin +1.25053
+vout2=0.15669*vin +1.2505
+vout3=1*vin +0.4
+y1l=-3e-17*x5 -1e-13*x4 +3e-9*x3 +9e-6*x2 +0.9595*x -108.26
+y2l=-3e-17*x5 -3e-14*x4 +2e-9*x3 +5e-6*x2 +0.9774*x -80.34
+y1h=-6e-19*x5 +4e-15*x4 +1e-10*x3 -9e-8*x2 +0.1006*x -10.671
+y2h=-2e-18*x5 -3e-15*x4 +2e-10*x3 +6e-7*x2 +0.102*x -1.4865
+
+
+
+
+
+
+
+
+
+
