@@ -13,5 +13,7 @@ gcc -o ajuste ajuste.c ad7706.c -l bcm2835
 cd -
 cp ./www/*.* /var/www/
 chmod 777 /var/www/*.*
-cat "www-data ALL=(root) NOPASSWD: /var/www/incli_graph_local.sh" >> /etc/sudoers
+echo "www-data ALL=(root) NOPASSWD: /var/www/incli_graph_local.sh" > ./clino
+chmod 0440 clino
+mv clino /etc/sudoers.d
 crontab ./varios/cron.txt
