@@ -20,7 +20,7 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-  */1 * * * * /home/pi/soft_inclinometro/main2 
+# */0 * * * * /home/pi/soft_inclinometro/main2 
   * * * * * sleep 30 && /home/pi/soft_inclinometro/incli_graph_local.sh   #hace el grafico todos los minutos
   */10 * * * * sleep 35 && /home/pi/soft_inclinometro/sync.sh    #sincroniza cada 10 minutos los ficheros
   01 00 * * * sleep 20 && /home/pi/soft_inclinometro/cabecera.sh  #cabecera todos los dias al comenzar el fichero
